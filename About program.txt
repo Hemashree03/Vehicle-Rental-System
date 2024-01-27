@@ -1,0 +1,28 @@
+It is a normal console-based project.
+
+NOTE: Before using this code, you have to fill the MySQL server details in the users.py file. The table structure is attached you have to create tables which is similar to the code. Then connect the server to the file. And run the code
+
+
+For users........
+
+	Initially, User has to log in with their email and password which are existing details in the database. If the user is new to this platform, the common personal details are gathered from the new user and saved to the database.
+
+	After logging in, the user can view the vehicle filter by the vehicle type(Bike, Car, All). The user can cart at most 2 vehicles. Users can get one car and one bike at a time. User can also remove vehicles from their cart.
+
+There are certain rules applied to the users while renting vehicles.
+RULE - 1   YOU CAN ONLY ADD A CAR AND A BIKE AT A TIME
+RULE - 2   YOU MUST RETURN THE VEHICLE ON THE SAME DAY
+RULE - 3   YOU MUST HAVE A MINIMUM SECURITY DEPOSIT AMOUNT FOR CARS - 10000 AND FOR BIKES - 3000
+RULE - 4   IF THE VEHICLE RUNS MORE THAN 500 KM THEN YOU MUST PAY AN ADDITIONAL 15%
+RULE - 5   IF YOU WANT TO EXTEND THE RENT DAY, THEN YOU CAN EXTEND CONSECUTIVELY MAXIMUM OF THREE DAYS.
+
+	After selecting vehicles, the user needs to give their rent date and return the expected date for each vehicle. Based on days, the rent amount will be calculated. 
+
+
+For Admins........
+
+	Initially, the Admin has to log in with their email and password which are existing details in the database. Admin can view all the vehicles. They can search a vehicle by any specifications such as vehicle model, vehicle type, vehicle color, etc. They can modify and delete the existing date in the vehicle. They can also view the customer details.
+
+	Admin has to enter the data of the return vehicle. They have to calculate the damage percentage. Admin has to get the money from the customer which is an additional charge(vehicle ran more than 500km and damage percentage) and rent amount for the days they have taken. If the vehicle runs over 1500KM then the vehicle must sent to service else they can view that vehicle to the customer. 
+
+	After receiving the vehicle from the service, the admin has to enter the data such as service type(general or repair), parts replaced, service cost, etc. 
